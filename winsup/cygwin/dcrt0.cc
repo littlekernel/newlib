@@ -1085,7 +1085,6 @@ _dll_crt0 ()
     fork_info->alloc_stack ();
 #endif
 
-  _feinitialise ();
   _main_tls = &_my_tls;
   _main_tls->call ((DWORD (*) (void *, void *)) dll_crt0_1, NULL);
 }
